@@ -1,133 +1,140 @@
 Mini Games for Open Food Facts
-Mini Games is a mockup project that showcases engaging, educational mini-games designed for integration into the Open Food Facts mobile app. These games aim to promote awareness about food nutrition, product transparency, and healthy decision-making through playful interaction with real product data from the Open Food Facts API.
+Mini Games is a mockup project that showcases engaging, educational mini-games designed for integration into the Open Food Facts mobile app. These games aim to promote awareness about food nutrition, product transparency, and healthy decision-making through interactive gameplay based on real product data fetched via the Open Food Facts API.
 
 This project is being developed as part of my proposal for Google Summer of Code (GSoC) 2025 with Open Food Facts.
 
-🎯 Project Objectives
-✅ Create intuitive and fun games that leverage Open Food Facts data
+Project Objectives
+Create intuitive and fun mini-games that leverage Open Food Facts data.
 
-✅ Educate users on nutrition and product labeling
+Educate users on nutrition labeling and healthy choices.
 
-✅ Encourage community contributions through gamification
+Encourage community contributions through gamification.
 
-✅ Lay the foundation for full integration into the official Open Food Facts mobile app
+Build a foundation for future integration into the official Open Food Facts app.
 
-🕹️ Games Implemented
+Games Implemented
 1. How Much Sugar? – Sugar Cube Guessing Game
-Objective: Estimate the sugar content (in sugar cubes) of a food product based on its image and name.
+Objective:
+Estimate the sugar content (in sugar cubes) of a food product based on its image and name.
 
 Gameplay:
 
-A product's image and name are displayed.
+A product's name and image are displayed.
 
 The user guesses the sugar content using a slider.
 
-Sugar cube animation provides visual feedback.
+Visual feedback is provided, including falling sugar cube animations.
 
-The next product loads after a brief delay.
+The next product is loaded after a short delay.
 
 Features:
 
-🍭 Falling sugar cube animation for incorrect guesses
+Animated sugar cubes for incorrect guesses.
 
-🔍 Debug mode to display actual sugar content for each barcode
+Debug mode to show actual sugar content for all barcodes.
 
-🎨 Clean, engaging UI with feedback after each round
+Clean and responsive UI with real-time feedback.
 
 2. Caloprix – Nutri-Score Guessing Game
-Objective: Guess the Nutri-Score (A to E) of a product.
+Objective:
+Guess the Nutri-Score (A to E) of a given product.
 
 Gameplay:
 
-Users are shown a product's image and name.
+A product's image and name are shown.
 
-They guess its Nutri-Score.
+The user selects the Nutri-Score.
 
-Feedback is provided and a streak of correct guesses is tracked.
+Correct or incorrect feedback is shown immediately.
+
+A streak counter tracks consecutive correct answers.
 
 Highlights:
 
-Promotes understanding of how Nutri-Scores are calculated
+Encourages better understanding of Nutri-Score logic.
 
-Encourages informed decision-making through repetition
+Reinforces learning through repetition and progression.
 
 3. The Price is Right – Price Guessing Game
-Objective: Estimate the product’s price using visual cues.
+Objective:
+Guess the price of a food product as accurately as possible.
 
 Gameplay:
 
-A product’s image and name are shown.
+The product name and image are presented.
 
-Users guess its price using a slider.
+The user adjusts a slider to estimate the price.
 
-Hints such as “More” or “Less” are provided.
+Hints such as “More” or “Less” help guide toward the correct answer.
 
-Users try to guess the correct price in as few attempts as possible.
+The goal is to guess the price in the fewest attempts.
 
-✨ Current Features
-✅ Live Product Data: Fetches real product details via the Open Food Facts REST API
+Current Features
+Dynamic product data fetched from the Open Food Facts REST API.
 
-✅ Randomized Barcodes: Selects product entries from a dynamic list
+Randomized product selection from a predefined barcode list.
 
-✅ Resilient Error Handling: Displays fallback UI if API calls fail
+Error handling and fallback behavior for failed API calls.
 
-✅ Custom UI Design:
+Custom UI theme:
 
-Top black bar with white text
+Black top bar with white text.
 
-Brownish-grey background for consistency
+Brownish-grey background across screens.
 
-Mild brown buttons with white text
+Mild brown buttons with white text.
 
-✅ Lightweight Animations: Includes a sugar cube drop animation in the sugar game
+Lightweight animations, such as falling sugar cubes in the sugar game.
 
-🔮 Planned Features
-📈 Gameplay & Educational Enhancements
-Add additional nutritional metrics (e.g. fat, protein, fiber)
+Planned Features
+Gameplay and Educational Enhancements
+Incorporate additional nutritional data (e.g., fat, protein, fiber).
 
-Show full product breakdown and explanations after each round
+Show detailed product breakdown and educational facts after each round.
 
-Display brief facts on what Nutri-Scores represent
+Provide brief explanations for Nutri-Scores and nutrition values.
 
-🌎 Leaderboards & Multiplayer
-Global & friend-based leaderboards
+Leaderboards and Multiplayer
+Implement global and friend-based leaderboards.
 
-Real-time competitive gameplay
+Add real-time multiplayer functionality for competitive play.
 
-🔍 Barcode Scanning
-Scan real-world products to play with live data
+Barcode Scanning Integration
+Enable users to scan real-world product barcodes and play using live data.
 
-🗣️ Localization
-Multi-language support for global accessibility
+Localization and Accessibility
+Add support for multiple languages.
 
-📡 Offline Mode
-Cache product data for gameplay without internet
+Ensure the interface is accessible across global user bases.
 
-🧠 AI-Driven Features
-Recommend products and challenges based on user behavior
+Offline Mode
+Cache product data locally for gameplay without internet access.
 
-Adjust difficulty based on user history
+AI-Driven Recommendations
+Suggest products and challenges based on user preferences and performance.
 
-🏅 Gamification
-Unlock achievements, badges, and levels
+Dynamically adjust game difficulty based on player history.
 
-Introduce daily and weekly challenges
+Gamification and User Retention
+Add achievements, badges, and levels for long-term engagement.
 
-🧩 Customization
-Allow filtering by category (e.g., snacks, beverages)
+Introduce daily or weekly challenges.
 
-Choose difficulty or game type
+Customization Options
+Allow filtering of products by category (e.g., beverages, snacks).
 
-📱 Integration with Open Food Facts App
-Seamless embedding within the Open Food Facts mobile app
+Let users choose difficulty or specific games to play.
 
-Use the official product database for consistent user experience
+Open Food Facts App Integration
+Seamless integration with the Open Food Facts mobile application.
 
-🛠️ Tech Stack
-Flutter – Cross-platform mobile app development
+Utilize the main app’s live product database for real-time accuracy.
 
-Dart – Core programming language
+Tech Stack
+Flutter – Cross-platform mobile app development.
 
-REST API – Interaction with Open Food Facts API
+Dart – Programming language used for Flutter.
 
-Animation – Basic widget animations for gameplay feedback
+REST API – For accessing Open Food Facts product data.
+
+Custom Animation – For enhancing UI/UX (e.g., sugar cube fall).
