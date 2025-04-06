@@ -1,5 +1,5 @@
-🍬 Sugar Game – Mini Games Mockup for Open Food Facts
-Sugar Game is a mockup project that showcases engaging, educational mini-games designed for integration into the Open Food Facts mobile app. These games aim to promote awareness about food nutrition, product transparency, and healthy decision-making through playful interaction with real product data from the Open Food Facts API.
+Mini Games Mockup for Open Food Facts
+Mini Games is a mockup project that showcases engaging, educational mini-games designed for integration into the Open Food Facts mobile app. These games aim to promote awareness about food nutrition, product transparency, and healthy decision-making through playful interaction with real product data from the Open Food Facts API.
 
 This project is being developed as part of my proposal for Google Summer of Code (GSoC) 2025 with Open Food Facts.
 
